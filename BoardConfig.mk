@@ -17,15 +17,15 @@
 # inherit from common g3
 -include device/lge/g3-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := g3,us990
+TARGET_OTA_ASSERT_DEVICE := g3,as990
 
 # Bluetooth
-BOARD_BLUEDROID_VENDOR_CONF := device/lge/us990/bluetooth/vnd_g3.txt
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/us990/bluetooth
+BOARD_BLUEDROID_VENDOR_CONF := device/lge/as990/bluetooth/vnd_g3.txt
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/as990/bluetooth
 BOARD_HAVE_BLUETOOTH_BCM := true
 
 # Kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_us990_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_as990_defconfig
 TARGET_REQUIRES_BUMP := true
 
 # Partitions
@@ -39,7 +39,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 27417634816
 TARGET_USERIMAGES_USE_F2FS := true
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/lge/us990/rootdir/etc/fstab.g3
+TARGET_RECOVERY_FSTAB := device/lge/as990/rootdir/etc/fstab.g3
 
 # NFC
 BOARD_NFC_CHIPSET := pn544
@@ -57,4 +57,4 @@ WIFI_DRIVER_FW_PATH_STA := "/system/etc/firmware/fw_bcmdhd.bin"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # inherit from the proprietary version
--include vendor/lge/us990/BoardConfigVendor.mk
+-include vendor/lge/as990/BoardConfigVendor.mk
